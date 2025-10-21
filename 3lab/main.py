@@ -6,7 +6,7 @@ def gen_per(elements, prefix=""):
             cur_elem = elements[i]
             ost_elem = elements[:i] + elements[i + 1:] #оставшиеся элементы после текущего
 
-            gen_per(ost_elem, prefix + str(cur_elem)) #pекурсивно генерируем оставшиеся перестановки
+            gen_per(ost_elem, prefix + str(cur_elem)) #pекурсивно генерируем оставшиеся перестановки 
 
 elements = '1234'
 print("Все перестановки:", elements)
